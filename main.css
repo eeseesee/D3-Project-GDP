@@ -1,0 +1,88 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.graph {
+  text-align: center;
+}
+
+.chart {
+  margin: 30px auto;
+  padding: 0px;
+  background-color: white;
+}
+
+.chart rect {
+  fill: orange;
+}
+
+.chart rect:hover {
+  fill: orangered;
+}
+
+.chart text {
+  fill: black;
+  font-size: 10px;
+  font-family: sans-serif;
+  text-anchor: end;
+}
+
+.axis text {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.axis path {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.tooltip-custom {
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+.tooltip-custom:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+.tooltip-custom.n:after {
+  margin: -2px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+#details {
+  width: 800px;
+  margin: 0px auto;
+}
